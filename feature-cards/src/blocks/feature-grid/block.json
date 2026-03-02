@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "feature-cards/grid",
+  "version": "1.0.0",
+  "title": "Feature Grid",
+  "category": "design",
+  "icon": "grid-view",
+  "description": "A responsive grid container for feature cards",
+  "keywords": ["grid", "features", "layout", "container"],
+  "textdomain": "feature-cards",
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false,
+    "color": {
+      "background": false,
+      "text": false
+    }
+  },
+  "attributes": {
+    "columns": {
+      "type": "number",
+      "default": 3
+    },
+    "gap": {
+      "type": "string",
+      "default": "medium",
+      "enum": ["small", "medium", "large"]
+    }
+  },
+  "providesContext": {
+    "feature-cards/gridColumns": "columns"
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

@@ -1,0 +1,10 @@
+/**
+ * Feature Cards Design Tokens - Color Palette
+ * Single source of truth for custom colors used across blocks and theme
+ */
+
+@theme {
+  --color-cream: rgb(248, 246, 239);
+  --color-charcoal: rgb(40, 40, 40);
+  --color-aqua: rgb(167, 248, 239);
+}

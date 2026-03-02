@@ -1,0 +1,22 @@
+{
+  "name": "feature-card-gutenberg-dev",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WordPress Feature Cards - Plugin and Theme Development Environment",
+  "scripts": {
+    "build": "npm run build:plugin && npm run build:theme",
+    "build:plugin": "cd feature-cards && npm run build",
+    "build:theme": "cd feature-cards-theme && npm run build",
+    "start": "npm run start:plugin & npm run start:theme",
+    "start:plugin": "cd feature-cards && npm start",
+    "start:theme": "cd feature-cards-theme && npm start",
+    "env:start": "wp-env start",
+    "env:stop": "wp-env stop",
+    "env:clean": "wp-env clean all",
+    "env:restart": "npm run env:stop && npm run env:start",
+    "install:all": "npm install && cd feature-cards && npm install && cd ../feature-cards-theme && npm install"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.39.0"
+  }
+}

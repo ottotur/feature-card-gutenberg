@@ -1,0 +1,93 @@
+/**
+ * Feature Cards Theme Styles
+ * Source file for theme styles - builds to assets/theme.css
+ */
+
+@import "tailwindcss";
+@source not "../scripts/sample-content.php";
+@import "../../src/colors.css";
+
+/* Theme custom styles */
+@layer base {
+  body {
+    @apply m-0 text-gray-800 antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+@layer components {
+  .site {
+    @apply min-h-screen flex flex-col bg-gray-50;
+  }
+  
+  .site-header {
+    @apply bg-white border-b border-gray-200 py-6 shadow-sm;
+  }
+  
+  .site-header__container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .site-title {
+    @apply text-2xl sm:text-3xl font-bold text-gray-900 m-0;
+  }
+  
+  .site-title a {
+    @apply text-gray-900 no-underline hover:text-blue-600 transition-colors;
+  }
+  
+  .site-main {
+    @apply flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12;
+  }
+  
+  .entry-header {
+    @apply mb-8;
+  }
+  
+  .entry-title {
+    @apply text-3xl sm:text-4xl font-bold text-gray-900 mb-4;
+  }
+  
+  .entry-content {
+    @apply text-gray-700 leading-relaxed;
+  }
+  
+.entry-content h1,
+.entry-content h2,
+.entry-content h3:not(.wp-block-feature-cards-card h3),
+.entry-content h4 {
+    @apply font-bold text-gray-900 mb-4 mt-8;
+}
+  
+  .entry-content h2 {
+    @apply text-2xl;
+  }
+  
+  .entry-content h3 {
+    @apply text-xl;
+  }
+  
+  .entry-content p {
+    @apply mb-4;
+  }
+  
+  .entry-content a {
+    @apply text-blue-600 hover:text-blue-800 underline;
+  }
+  
+  .site-footer {
+    @apply bg-white border-t border-gray-200 mt-auto;
+  }
+  
+  .site-footer__container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6;
+  }
+  
+  .site-footer__text {
+    @apply text-center text-sm text-gray-600;
+  }
+  
+  .site-footer__text a {
+    @apply text-gray-800 hover:text-gray-900 no-underline font-medium transition-colors;
+  }
+}

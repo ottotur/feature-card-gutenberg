@@ -1,0 +1,19 @@
+{
+  "name": "feature-cards-theme",
+  "version": "1.0.0",
+  "description": "WordPress theme for Feature Cards plugin with Tailwind CSS",
+  "scripts": {
+    "prebuild": "node scripts/sync-theme-colors.js",
+    "build:css": "postcss src/theme.css -o assets/theme.css",
+    "build:editor": "postcss src/editor.css -o assets/editor.css",
+    "build": "npm run prebuild && npm run build:css && npm run build:editor",
+    "start": "npm run prebuild && postcss src/theme.css -o assets/theme.css --watch & postcss src/editor.css -o assets/editor.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.1.18"
+  }
+}

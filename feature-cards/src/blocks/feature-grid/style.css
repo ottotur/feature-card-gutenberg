@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@source "../../**/*.{ts,tsx}";
+
+.wp-block-feature-cards-grid {
+  @apply w-full;
+}
+
+/* Gap sizes */
+.wp-block-feature-cards-grid.gap-small {
+  @apply gap-4;
+}
+
+.wp-block-feature-cards-grid.gap-medium {
+  @apply gap-6 md:gap-8;
+}
+
+.wp-block-feature-cards-grid.gap-large {
+  @apply gap-8 md:gap-12;
+}

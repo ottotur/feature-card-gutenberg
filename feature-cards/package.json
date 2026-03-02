@@ -1,0 +1,33 @@
+{
+  "name": "feature-cards",
+  "version": "1.0.0",
+  "description": "WordPress Gutenberg blocks for displaying feature cards",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "packages-update": "wp-scripts packages-update"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.11",
+    "@types/react-dom": "^19.2.3",
+    "@types/wordpress__block-editor": "^15.0.0",
+    "@types/wordpress__blocks": "^12.5.17",
+    "@types/wordpress__components": "^23.0.11",
+    "@wordpress/scripts": "^31.4.0",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@wordpress/block-editor": "^15.12.0",
+    "@wordpress/blocks": "^15.12.0",
+    "@wordpress/components": "^32.1.0",
+    "@wordpress/element": "^6.39.0",
+    "@wordpress/i18n": "^6.12.0",
+    "@wordpress/icons": "^11.6.0",
+    "classnames": "^2.5.1"
+  }
+}

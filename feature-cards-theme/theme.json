@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"slug": "cream",
+					"color": "rgb(248, 246, 239)",
+					"name": "Cream"
+				},
+				{
+					"slug": "charcoal",
+					"color": "rgb(40, 40, 40)",
+					"name": "Charcoal"
+				},
+				{
+					"slug": "aqua",
+					"color": "rgb(167, 248, 239)",
+					"name": "Aqua"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "800px",
+			"wideSize": "1200px"
+		},
+		"spacing": {
+			"padding": true,
+			"margin": true,
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"%",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"customLineHeight": true
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "#ffffff",
+			"text": "#333333"
+		},
+		"typography": {
+			"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif",
+			"fontSize": "16px",
+			"lineHeight": "1.6"
+		}
+	}
+}

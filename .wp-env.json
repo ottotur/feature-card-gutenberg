@@ -1,0 +1,17 @@
+{
+  "core": null,
+  "phpVersion": "8.3",
+  "port": 8888,
+  "plugins": ["./feature-cards"],
+  "themes": ["./feature-cards-theme"],
+  "env": {
+    "development": {
+      "mappings": {
+        "wp-content/mu-plugins/feature-cards-scripts": "./feature-cards-theme/scripts"
+      }
+    }
+  },
+  "lifecycleScripts": {
+    "afterStart": "(cd feature-cards && npm run build) && (cd feature-cards-theme && npm run build) && wp-env run cli -- wp plugin activate feature-cards --allow-root && wp-env run cli -- wp theme activate feature-cards-theme --allow-root && wp-env run cli -- wp eval-file /var/www/html/wp-content/mu-plugins/feature-cards-scripts/sample-content.php --allow-root"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "feature-cards/card",
+  "version": "1.0.0",
+  "title": "Feature Card",
+  "category": "design",
+  "icon": "id-alt",
+  "description": "An individual feature card with image, title, description, and CTA button",
+  "keywords": ["card", "feature", "cta", "button"],
+  "textdomain": "feature-cards",
+  "parent": ["feature-cards/grid"],
+  "supports": {
+    "html": false,
+    "reusable": false
+  },
+  "attributes": {
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "imageId": {
+      "type": "number"
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "description": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonText": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "cream",
+      "enum": ["cream", "charcoal", "aqua"]
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
