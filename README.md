@@ -1,6 +1,16 @@
-# Feature Cards Project
+# Feature Cards
 
-WordPress Feature Cards plugin and theme development environment with shared wp-env instance.
+A WordPress plugin and paired block theme for building responsive feature card sections in the Block Editor (Gutenberg).
+
+Add a **Feature Grid** block to any page, drop **Feature Cards** inside it, and configure each card with an image, title, description, and call-to-action button — all via the editor sidebar, no code required.
+
+**Features:**
+- `feature-cards/grid` block — responsive 2/3/4-column layout with configurable gap
+- `feature-cards/card` block — image, title, description, and CTA button per card
+- Three brand color options per card: Cream, Charcoal, Aqua
+- Live inline editing in the Block Editor
+- Shared design token system keeps plugin styles and theme in sync
+- Companion block theme with editor styles and auto-generated color palette
 
 ## Project Structure
 
